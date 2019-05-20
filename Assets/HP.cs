@@ -6,10 +6,6 @@ public class HP : MonoBehaviour {
 
     public int hitPoint = 100; //HP
 
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {
