@@ -11,7 +11,10 @@ public class EnemyControllet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = new Vector3(Mathf.PingPong(Time.time, 6), transform.position.y, transform.position.z);
+        Vector3 pos = transform.position;
+        pos.x += Mathf.Sin(Time.time)*0.1f;
+        transform.position = pos;
+        //transform.position = new Vector3(Mathf.PingPong(Time.time, 6), transform.position.y, transform.position.z);
 		
 	}
 }

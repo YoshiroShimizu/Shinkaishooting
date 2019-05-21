@@ -51,7 +51,7 @@ public class ApperScript : MonoBehaviour {
         //敵の向きをランダムに決定
         var randomRotationY = Random.value * 360f;
         int offsetX = Random.Range(-11, 11);
-        int offsetZ = Random.Range(7,10);
+        int offsetZ = Random.Range(15,19);
 
         GameObject.Instantiate(enemys[randomValue], transform.position=new Vector3(offsetX,transform.position.y,offsetZ), Quaternion.Euler(0f, randomRotationY, 0f));
 

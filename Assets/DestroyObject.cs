@@ -5,7 +5,7 @@ using UnityEngine;
 public class DestroyObject : MonoBehaviour {
 
     public int damage;
-    private GameObject enemy;
+    //private GameObject enemy;いらなかった
     private HP hp;
     
 
@@ -13,11 +13,12 @@ public class DestroyObject : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        enemy = GameObject.Find("ENEMY(Clone)");
-        hp = enemy.GetComponent<HP>();
-        
-		
-	}
+        //enemy = GameObject.Find("ENEMY");いらなかった
+        hp = GetComponentInParent<HP>();
+        //hp = enemy.GetComponent<HP>();正しくは上の行
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
