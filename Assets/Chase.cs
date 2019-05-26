@@ -15,7 +15,7 @@ public class Chase : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        speed = 2.0f;
+        speed = 3.0f;
          player = GameObject.Find ( "Player" );
 		
 	}
