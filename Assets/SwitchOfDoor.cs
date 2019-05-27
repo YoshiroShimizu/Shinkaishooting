@@ -28,7 +28,7 @@ public class SwitchOfDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("shell") && this.gameObject == RedDoorSwitch)
+        if (other.CompareTag("SwitchRock") && this.gameObject == RedDoorSwitch)
         {
             Destroy(this.gameObject);
             Destroy(other.gameObject);

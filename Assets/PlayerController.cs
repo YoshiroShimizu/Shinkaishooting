@@ -20,9 +20,14 @@ namespace FPS {
 
         private CharacterController charaController;
 
+        
 
-	    // Use this for initialization
-	    void Start () {
+
+
+        // Use this for initialization
+        void Start () {
+           
+
             charaController = GetComponent<CharacterController>();
 		
 	    }
@@ -42,15 +47,28 @@ namespace FPS {
                 movement.Normalize();
             }
 
-            //歩行と走りを切りかえる
-            if (Input.GetKey(KeyCode.Space)){
+
+
+
+
+            // ★修正
+            // 歩行とランを切り替える。
+            if (Input.GetKey(KeyCode.Space))
+            {
                 charaController.Move(movement * Time.fixedDeltaTime * runSpeed);
             }
-            else {
+            else
+            {
                 charaController.Move(movement * Time.fixedDeltaTime * walkSpeed);
             }
+
+
+
+
+
         }
 
     }
 }
+
 
