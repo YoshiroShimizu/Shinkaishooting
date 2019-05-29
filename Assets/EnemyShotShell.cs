@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyShotShell : MonoBehaviour {
 
+    
     public GameObject enemyShellPrefab;
     public float shotSpeed;
     public AudioClip shotSound;
@@ -19,7 +20,7 @@ public class EnemyShotShell : MonoBehaviour {
 
         shotIntarval += 1;
 
-        if (shotIntarval % 60 == 0)
+        if (shotIntarval % 80 == 0)
         {
             GameObject enemyShell = (GameObject)Instantiate(enemyShellPrefab, transform.position, Quaternion.identity);
 
@@ -31,6 +32,10 @@ public class EnemyShotShell : MonoBehaviour {
 
             Destroy(enemyShell, 3.0f);
         }
-		
-	}
+
+    }
+
+    
 }
+
+
