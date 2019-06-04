@@ -27,7 +27,7 @@ public class ApperRancePointD : MonoBehaviour
         {
             GameObject enemyhoudan = Instantiate(enemy) as GameObject;
 
-            enemyhoudan.transform.position = new Vector3(-55, 3, 4);
+            enemyhoudan.transform.position = new Vector3(2, 27, -412);
         }
     }
 

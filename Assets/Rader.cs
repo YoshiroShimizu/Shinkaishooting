@@ -27,7 +27,7 @@ public class Rader : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player")){
-            transform.root.LookAt(target);
+            transform.root.LookAt(other.transform);
 
         }
 
